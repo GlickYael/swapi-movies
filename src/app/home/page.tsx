@@ -27,7 +27,7 @@ const Home: React.FC = () => {
     return (
         <>
             <header>
-                <h1>Star Wars Movies</h1>
+                <h1>Movies</h1>
             </header>
             <main>
                 <main className="movie-grid">
