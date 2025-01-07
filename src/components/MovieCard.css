@@ -1,0 +1,65 @@
+/* General Card Styling */
+.movie-card {
+  background: #1e293b; /* Dark blue background */
+  color: #f8fafc; /* Light text */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin: 12px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.movie-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Title and release date */
+.movie-content {
+  margin-bottom: 12px;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.movie-release {
+  font-size: 0.9rem;
+  color: #94a3b8; /* Lighter gray text for details */
+}
+
+/* Favorite Button */
+.favorite-button {
+  background-color: #64748b; /* Muted blue-gray */
+  color: #f8fafc;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-button:hover {
+  background-color: #475569; /* Darker hover state */
+}
+
+.favorite-active {
+  background-color: #facc15; /* Bright yellow for favorited */
+  color: #1e293b; /* Dark blue text for contrast */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .movie-card {
+    width: 100%;
+  }
+}
